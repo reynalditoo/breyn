@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+em {
+    font-style: normal;
+}
+
+/* RENDRE TOUTES LE SCROLLBARS INVISIBLES */
+
+
+/* @import "~bootstrap/dist/css/bootstrap.min.css"; */
+
+/* html.loading {
+    animation: loading 5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-color: #FFF;
+    }
+    50% {
+        background-color: #000;
+    }
+    100% {
+        background-color: #FFF;
+    }
+} */
+
+/* html, body {
+    For the loading indicator to be vertically centered ensure
+    the html and body elements take up the full viewport
+    min-height: 100%;
+}
+ */
+/* body {
+    -webkit-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+html.loading body {
+    Make the contents of the body opaque during loading
+    opacity: 0;
+
+    Ensures that the transition only runs in one direction
+    -webkit-transition: opacity 0;
+    transition: opacity 0;
+}
+html {
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+} */

@@ -1,0 +1,35 @@
+<footer class="flex-container">
+  	<p>
+  		&copy; {{ date | date:'yyyy' }} - <em>breyn</em>.net - <strong>Développeur web freelance</strong> - <em>Paris</em> et région <em>parisienne</em>
+  	</p>
+  	<section (click)="btnClicked = true" (mouseleave)="btnClicked = false">
+	  	<p (click)="btnClicked = !btnClicked">
+	  		Mentions légales
+	  	</p>
+	  	<div *ngIf="btnClicked">
+	  		<p>
+				Micro-entrepreneur : <span>Doullé</span> Reynald
+			</p>
+			<p>
+				Activité : <em>Développement</em> d'<em>applications web</em> sur-mesure pour entreprises et particuliers
+			</p>
+			<p>
+				E-mail : reynald.doulle@gmail.com
+			</p>
+			<p>
+				Contact téléphonique : 06 95 60 84 24
+	  		</p>
+	  		<p>
+				Domicile : 3 rue des mares, 93230 ROMAINVILLE
+	  		</p>
+	  		<p>
+				SIRET : 834 451 361 00010<br>
+				SIREN : 834 451 361<br>
+				N° de TVA INTRACOMMUNAUTAIRE : FR17834451361
+			</p>
+			<p>
+				URL : <a href="https://www.breyn.net">https://www.breyn.net</a>
+			</p>
+	  	</div>
+    </section>
+</footer>

@@ -1,0 +1,78 @@
+.one {
+  height: 100%;
+  width: 100%;
+}
+
+form {
+	width: 240px;
+    position: relative;
+    left: 50%;
+    transform: translate(-43.5%);
+    top: 105px;
+}
+@media screen and (min-width: 1100px) {
+  form {
+  	width: 22vw;
+  }
+}
+
+h2 {
+  display: none;
+}
+@media screen and (min-width: 1250px) {
+  h2 {
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: 'audiowide', arial;
+    font-size: 2.5vw;
+  }
+  form {
+    top: 56px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  h2 {
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: 'audiowide', arial;
+    font-size: 3vw;
+  }
+}
+
+.one > div {
+	height: 250px;
+	width: 250px;
+    text-align: center;
+    margin-left: 33px;
+}
+
+p {
+	color: #000;
+	font-weight: bold;
+}
+
+button {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	width: 100%;
+}
+
+.msg {
+    border-radius: 10px;
+    margin-top: 9px;
+    opacity: 0.8;
+    text-align: center;
+}
+.msg p {
+	color: #FFF;
+	font-weight: bold;
+}
+.success {
+	background-color: green;
+}
+.failure {
+	background-color: red; 
+}

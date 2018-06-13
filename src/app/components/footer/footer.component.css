@@ -1,0 +1,36 @@
+.flex-container {
+	min-height: 200px;
+	background-color: #000000;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	flex-direction: column;
+	padding: 20px;
+}
+
+p {
+	color: #FFF;
+}
+
+section {
+	padding: 10px;
+	padding-bottom: 0;
+	border-radius: 10px;
+	background-color: #FFF;
+	cursor: pointer;
+}
+section > p {
+	text-align: center;
+	font-weight: bold;
+}
+section p {
+	color: black;
+	font-size: .8em;
+}
+section > div {
+	cursor: default;
+}
+
+span {
+	text-transform: uppercase;
+}

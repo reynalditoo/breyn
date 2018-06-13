@@ -1,0 +1,96 @@
+<main>
+
+<app-header></app-header>
+
+  <div id="slower">
+
+      <div id="breyn" class="breyn"> 
+      </div>
+
+      <div class="prestations">
+        <section>
+          <span #grande><p>{{ mainService.dataHovered !== '' ? mainService.dataHovered : 'Vous désirez...' }}</p></span>
+          <span #medium></span>
+          <span #petite></span>
+        </section>
+      </div>
+
+      <div class="sourire">
+
+      </div>
+
+      <div id="contact" class="contact">
+
+        <app-contact></app-contact>
+        
+      </div>
+
+      <app-footer></app-footer>
+
+  </div><!-- end slower -->
+
+
+
+  <div id="faster" appParallax>
+
+      <div id="developpeur" class="developpeur-couleur">
+
+        <app-developpeur></app-developpeur>
+        
+      </div>
+
+      <div id="prestations" class="prestations-transparent">       
+
+        <app-prestations></app-prestations>
+      
+      </div>
+
+      <div id="faq" class="faq-couleur">
+
+        <app-faq></app-faq>
+
+      </div>
+
+      <div id="sourire" class="sourire-transparent">
+        
+        <app-sourire></app-sourire>
+
+      </div>
+
+      <div id="portfolio" class="portfolio-couleur">
+
+        <app-portfolio></app-portfolio>
+        
+        <!-- carousel ? -->
+      </div>
+
+  </div> <!-- end faster -->
+
+
+</main>
+
+
+<!-- Le Modal est placé en dehors du main car main est position:relative et le modal ne peut fonctionner correctement à l'intérieur d'un élément en position:relative ou position:fixed 
+N.B : le modal apparait dans <app-prestations> -->
+
+
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+      <div class="modal-header">
+        <h4 class="modal-title">{{ mainService.dataClicked.titre }}</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        {{ mainService.dataClicked.body }}
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+      </div>
+      
+    </div>
+  </div>
+</div>

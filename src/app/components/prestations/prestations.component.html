@@ -1,0 +1,36 @@
+<!-- Le modal affiché par un (click) se trouve dans app.component.html sous le </main> --> 
+
+<section id="website" class="d-flex flex-row flex-wrap align-items-sm-stretch align-items-end">
+    <article class="offset-sm-6 col-sm-3 col-6" (click)="onClick(fiches.vitrine)" (mouseenter)="onHover('Un site vitrine ?')" (mouseleave)="onLeave()" data-toggle="modal" data-target="#myModal">
+      <img class="vitrine" src="../assets/png/transparent.png" alt="Loading image...">
+    </article>
+    <article class="col-sm-3 col-6" (click)="onClick(fiches.blog)" (mouseenter)="onHover('Un blog ?')" (mouseleave)="onLeave()" data-toggle="modal" data-target="#myModal"> <!-- remplacer par refonte de site ? ou site e-commerce avec CMS ? -->
+      <img class="blog" src="../assets/png/transparent.png" alt="Loading image...">
+    </article>
+    <article class="offset-sm-6 col-sm-3 col-6" (click)="onClick(fiches.refonte)" (mouseenter)="onHover('Une refonte/amélioration ?')" (mouseleave)="onLeave()" data-toggle="modal" data-target="#myModal">
+      <img class="refonte" src="../assets/png/transparent.png" alt="Loading image...">
+    </article>
+    <article class="col-sm-3 col-6" (click)="onClick(fiches.autre_site)" (mouseenter)="onHover('Un autre type de site ?')" (mouseleave)="onLeave()" data-toggle="modal" data-target="#myModal">
+      <img class="question" src="../assets/png/transparent.png" alt="Loading image...">
+    </article>
+    <hr>
+</section>
+
+<section id="fonctionnalites" class="d-inline-flex flex-sm-row flex-wrap flex align-items-center justify-content-around">
+    <article class="offset-sm-2 col-sm-2 col-6" (click)="onClick(fiches.responsive)" (mouseenter)="onHover('...responsive ?')" (mouseleave)="onLeave()" data-toggle="modal" data-target="#myModal">
+      <img class="responsive" src="../assets/png/transparent.png" alt="Loading image...">
+    </article>
+    <article class="col-sm-2 col-6" (click)="onClick(fiches.seo)" (mouseenter)="onHover('...bien référencé ?')" (mouseleave)="onLeave()" data-toggle="modal" data-target="#myModal">
+      <img class="seo" src="../assets/png/transparent.png">
+    </article>
+    <article class="col-sm-2 col-6" (click)="onClick(fiches.traduction)" (mouseenter)="onHover('...qui dépasse les frontières ?')" (mouseleave)="onLeave()" data-toggle="modal" data-target="#myModal" alt="Loading image...">
+      <img class="traduction" src="../assets/png/transparent.png">
+    </article>
+    <article class="col-sm-2 col-6" (click)="onClick(fiches.admin)" (mouseenter)="onHover('...avec un espace admin ?')" (mouseleave)="onLeave()" data-toggle="modal" data-target="#myModal">
+      <img class="admin" src="../assets/png/transparent.png" alt="Loading image...">
+    </article>
+    <article class="col-sm-2 col-6" (click)="onClick(fiches.autre_fonctionnalite)" (mouseenter)="onHover('...une autre fonctionnalité ?')" (mouseleave)="onLeave()" data-toggle="modal" data-target="#myModal">
+      <img class="question2" src="../assets/png/transparent.png" alt="Loading image...">
+    </article>
+</section>
+    

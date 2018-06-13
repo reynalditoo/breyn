@@ -1,0 +1,200 @@
+/* TITRE */
+
+.titre {
+	height: 20%;
+}
+h2 {
+	font-family: 'Cinzel Decorative', arial;
+	font-size: 5vw;
+	text-transform: uppercase;
+}
+.left {
+	position: relative;
+	left: -1000px;
+}
+.right { /* Pour que les <span class="right"> de droite aient un right:-1000px sans créer une marge énorme au <main> de app.component.html => j'ai attribué au main un overflow:hidden */
+	position: relative;
+	right: -1000px;
+}
+.opacity {
+	opacity: 0;
+}
+
+.titre > p {
+	font-style: italic;
+	font-size: 1em;
+}
+
+figure > h5,
+figure > h6 {
+	position: relative;
+    top: -44px;
+    z-index: 9;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 6px #000000;
+}
+figure > h6 {
+	top: -51px;
+	font-size: 11px;
+}
+
+/* CAROUSEL */
+
+/* .carousel {
+	width: 100%;
+	height: 75%;
+}
+
+#carousel {
+	height: 400px;
+	width: 50%;
+}
+
+.carousel-inner {
+	height: 100%;
+}
+
+.carousel-item {
+	height: 100%;
+}
+.carousel-item img {
+    background-repeat: no-repeat;
+	height: 70%;
+	width: 100%;
+	border-radius: 10px;
+} */
+.img1, .img2, .img3 {
+	background-image: url('../../../assets/carousel/sprite5.png');
+}
+.img1 {
+    background-position: 32% 9%;
+    background-size: 145%;
+}
+.img2 {
+    background-position: 47% 54%;
+    background-size: 145%;
+}
+.img3 {
+    background-position: 19% 99%;
+    background-size: 145%;
+}
+.img4, .img5, .img6 {
+	background-image: url('../../../assets/carousel/sprite6.png');
+}
+.img4 {
+    background-position: 49% 9%;
+    background-size: 145%;
+}
+.img5 {
+    background-position: 47% 54%;
+    background-size: 145%;
+}
+.img6 {
+    background-position: 37% 99%;
+    background-size: 145%;
+}
+
+/* .carousel-caption h3 {
+	text-transform: uppercase;
+	color: #000000;
+}
+.carousel-caption > p {
+	font-style: italic;
+	color: #000000;
+} */
+
+
+/* 3D Slideshow */ 
+
+#slideshow {
+	margin: 0 auto;
+	padding-top: 50px;
+	height: 600px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.entire-content {
+	margin: auto;
+	width: 190px;
+	perspective: 1000px;
+	position: relative;
+	padding-top: 80px;
+}
+
+.content-carrousel {
+	width: 100%;
+	position: absolute;
+	float: right;
+	animation: rotar 45s infinite linear;
+	transform-style: preserve-3d;
+}
+@keyframes rotar {
+	from {
+		transform: rotateY(360deg);
+	} to {
+		transform: rotateY(0deg);
+	}
+}
+
+.content-carrousel:hover {
+	animation-play-state: paused;
+	cursor: pointer;
+}
+
+.content-carrousel figure {
+	width: 130%;
+	height: 160px;
+	border: 1px solid #3b444b;
+	overflow: hidden;
+	position: absolute;
+}
+
+.content-carrousel figure:nth-child(1) {
+	transform: rotateY(-60deg) translateZ(280px); 
+} .content-carrousel figure:nth-child(2) {
+	transform: rotateY(0deg) translateZ(280px); 
+} .content-carrousel figure:nth-child(3) {
+	transform: rotateY(60deg) translateZ(280px); 
+} .content-carrousel figure:nth-child(4) {
+	transform: rotateY(120deg) translateZ(280px); 
+} .content-carrousel figure:nth-child(5) {
+	transform: rotateY(180deg) translateZ(280px); 
+} .content-carrousel figure:nth-child(6) {
+	transform: rotateY(240deg) translateZ(280px); 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} 
+/* .content-carrousel figure:nth-child(7) {
+	transform: rotateY(240deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(8) {
+	transform: rotateY(280deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(9) {
+	transform: rotateY(320deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(10) {
+	transform: rotateY(360deg) translateZ(300px); 
+}  */
+figure a[href="#contact"] {
+	color: #FFFFFF;
+	text-shadow: 0 0 6px #000000;
+}
+
+.shadow {
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px #000;
+    border-radius: 1px;
+}
+
+.content-carrousel img {
+	image-rendering: auto;
+	transition: all 300ms;
+	width: 100%;
+	height: 100%;
+}
+
+.content-carrousel img:hover {
+	transform: scale(1.2);
+	transition: all 300ms;
+}

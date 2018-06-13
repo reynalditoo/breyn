@@ -1,0 +1,71 @@
+
+<div class="container-fluid">
+	<div class="row">
+
+	  <section id="questions" class="col-md-6 col-12">
+	  	<img src="../assets/png/dialogue-cut.png" alt="Loading image...">
+	  	<article>
+		    <p (click)="btnClicked = 'question-un'">
+		      J’ai une page Facebook, des cartes de visites… Pourquoi un <em>site internet</em> ?
+		    </p>
+		    <p (click)="btnClicked = 'question-deux'">
+		      Un professionnel ? Pourquoi faire ?
+		    </p>
+		    <p (click)="btnClicked = 'question-trois'">
+		      Pourquoi faire appel a un <em>freelance</em> plutôt qu’à une agence ?
+		    </p>
+		    <p (click)="btnClicked = 'question-quatre'">
+		      Quand ? Comment ? Combien ?
+		    </p>
+		</article>
+	  </section>
+
+	  <section id="reponses" class="col-md-6 col-12">
+	  	<img src="../assets/png/board-cut.png" alt="Loading image...">
+	  	
+	  	<h2 *ngIf="btnClicked == null">FAQ</h2>
+	  	
+	    <article *ngIf="btnClicked == 'question-un'">
+	      <p>
+	        Une question...<br>
+	        ...d'image : parce qu'avoir son propre <em>site internet</em> donne de la crédibilité à son activité. Vous seriez-vous abonné à votre <a href="https://fr.wikipedia.org/wiki/Fournisseur_d%27acc%C3%A8s_%C3%A0_Internet" target="_blank">FAI</a> s'il n'avait eu qu'une page Facebook ? Me croiriez-vous sur parole si je n'avais qu'une carte de visite pour montrer que je suis <em>développeur web</em> ? Moi non plus.
+	        <br>
+	        ...de fonctionnalités : parce qu'une simple page sur les réseaux sociaux ne permettra jamais à un internaute de créer son profil et de commander un produit.
+	        <br>
+	        ...d'identité : parce qu'un <em>site internet</em> est customisable de A à Z et peut être conçu à votre image. Une page Facebook restera toujours une page Facebook.
+	      </p>
+	    </article>
+	    <article *ngIf="btnClicked == 'question-deux'">
+	      <h3>"Sur-mesure"</h3>
+	      <p>
+	      	Le web a tellement évolué qu'il permet maintenant à tout le monde ou presque de pouvoir créer un site internet tout seul, sans aucune connaissance en développement. Et c'est plutôt génial avouons-le. On peut même en échange de quelques deniers acheter un <a href="https://definition-marketing.net/template/" target="_blank">thème</a> tout fait. Mais combien d'autres personnes ont acheté le même thème que moi ? Et si je veux ajouter une fonctionnalité propre à mes besoins, comment faire ? Ou au moins faire en sorte que mon logo apparaisse avec un effet un peu original ? 
+	      </p>
+      	  <p>
+      		C'est là que le professionnel intervient. Son rôle est de faire de votre <i>maison digitale</i> un endroit <em>sur-mesure</em>, celui-là même que vous aurez imaginé. Un endroit qui vous ressemble à vous et personne d'autre.
+      	  </p>
+	      	<!-- une plateforme comme Wordpress (ou Wix, dans une moindre mesure) est pratique dans le sens où elle permet de créer un <em>site internet</em> sans nécessiter la moindre connaissance en <em>développement</em>, vous n'avez pour cela qu'à choisir parmi un grand nombre de thèmes</a> celui qui vous convient le mieux. En revanche, vous ne serez pas le seul à l'avoir. Et il vaudra mieux ne pas se tromper, car vous pourrez difficilement en modifier la structure, un peu comme pour une maison. 
+	      	<br> --><!-- 
+	      	> Performance : je me suis spécialisé dans les technologies parmi les plus puissantes qui soient actuellement (<em>Angular</em>, <em>Node.js</em>) et qui rendront votre site bien plus rapide et fluide que n'importe quel autre technologie. -->
+	    </article>
+	    <article *ngIf="btnClicked == 'question-trois'">
+	      <p>
+	       > Meilleurs tarifs :
+	       Un <em>freelance</em> vous coûtera dans la plupart des cas moins cher qu’une agence. Travaillant seul, ses charges de fonctionnement sont logiquement réduites, d’où un coût horaire plus avantageux.
+	       <br>
+ 		   > Flexibilité :
+ 		   Dans le cas d'une société dont les projets fluctuent selon les périodes et qui n'aurait pas nécessairement les moyens d’embaucher une personne supplémentaire, le profil flexible du freelance peut être la solution.
+ 		   <br>
+ 		   > Un échange personnalisé :
+ 		   Lorsque vous travaillez avec un <em>freelance</em>, vous disposez d’un lien privilégié avec ce dernier, une relation de confiance. Il est votre seul référent, connaît tous les aspects de votre projet et fait preuve d'une grande disponibilité.
+	      </p>
+	    </article>
+	    <article *ngIf="btnClicked == 'question-quatre'">
+	      <p>
+	      	Le coût de votre projet dépendera du temps nécessaire à sa réalisation. Plus votre site sera riche en contenu, en fonctionnalités et en effets de style, plus long sera son <em>développement</em>.<br>
+	      	Si vous souhaitez me soumettre un projet, recevoir une estimation ou simplement obtenir un renseignement, n'hésitez pas à me <a href="#contact">contacter</a> &#9786;
+	      </p>
+	    </article>
+	  </section>
+
+	</div>
+</div>

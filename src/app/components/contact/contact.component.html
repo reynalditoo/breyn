@@ -1,0 +1,41 @@
+
+
+<div class="one">
+	<form (submit)="sendMail(form)" #f="ngForm">
+	<h2>CONTACT</h2>
+	<fieldset>
+		<div class="form-group">
+			<input class="form-control" type="text" id="nom-prenom" name="name" placeholder="Votre nom et prénom" [(ngModel)]="form.name" required>
+		</div>
+	<!-- 	<span class="help-block">
+		Merci d'entrer vos noms et prénoms
+	</span> -->
+		<div class="form-group">
+			<input class="form-control" type="email" id="email" name="email" placeholder="Votre adresse mail" [(ngModel)]="form.email" #email="ngModel" email required>
+		</div>
+		<!-- <span class="help-block" *ngIf="!email.valid && email.touched && email.dirty">
+			Merci d'entrer une adresse mail
+		</span> -->
+		<!-- <span class="help-block">
+			L'email entrée est incorrecte
+		</span> -->
+		<div class="form-group">
+			<textarea class="form-control" type="text" id="message" name="message" rows="10" placeholder="Votre message..." [(ngModel)]="form.message" required></textarea>
+		</div>
+		<!-- <span class="help-block" *ngIf="!message.valid && message.touched">
+			Merci d'entrer un message
+		</span><br> -->
+		<button class="btn btn-info" type="submit" [disabled]="!f.valid">Envoyer</button> 	
+		<div class="form-group msg success">
+			<p *ngIf="msgSent" #isSent>
+				Votre message a bien été envoyé !
+			</p>
+		</div>	
+		<div class="form-group msg failure">
+			<p *ngIf="msgNotSent" #isNotSent>
+				Oups il y a eu une erreur, votre message n'a pas pu être envoyé..
+			</p>
+		</div>
+	</fieldset>	
+	</form>
+</div>

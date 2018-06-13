@@ -1,0 +1,82 @@
+p {
+    text-align: justify;
+    margin-top: 30px;
+}
+
+h1 {
+    height: 200px;
+    text-align: center;
+    color: #000;
+    font-family: 'Audiowide', arial;
+    font-size: 38px;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+h1 span {
+    opacity: 0;
+}
+/* h1 span:last-child { Pour que les <span class="right"> de droite aient un right:-1000px sans créer une marge énorme au <main> de app.component.html => j'ai attribué au main un overflow:hidden
+    position: relative;
+    right: -1000px;
+    opacity: 1;
+} */
+
+.d-flex:last-child {
+    height: 490px;
+}
+
+article {
+    width: 30%;
+    height: 400px;
+    position: relative;
+}
+
+article h3 {
+    text-align: center;
+    font-size: 1.2rem; 
+}
+
+img {
+    background-image: url('../../../assets/png/sprite1.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 85%;
+}
+article:first-child img {
+    background-position: 3% 105%;
+    background-size: 1100%;
+}
+article:nth-child(2) img {
+    background-position: 18% 98%;
+    background-size: 500%;
+}
+article:last-child img {
+    -webkit-transform: rotate(90deg); /* Safari 3-8 */
+    transform: rotate(90deg);
+    background-position: 106% 50%;
+    background-size: 153%;
+}
+
+.overlay {
+    position: absolute;
+    top: -36px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 2s ease;
+    background-color: #FFF;
+    border-radius: 10px;
+    overflow: auto;
+    box-shadow: 2px 2px 4px;
+    z-index: 4;
+    padding: 2% 2%;
+}
+
+article:hover .overlay {
+    opacity: 1;
+    cursor: default;
+}

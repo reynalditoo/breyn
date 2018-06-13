@@ -1,0 +1,135 @@
+/**************** 
+     GENERAL 
+*****************/
+
+main {
+	/* min-width: 1200px; */
+	position: relative;
+	overflow: hidden; /* Pour que les <span class="right"> du portfolio.component.html aient un right:-1000px sans créer une marge 
+	                  énorme au <main> de app.component.html */
+}
+
+#slower > div {
+	width: 100%;
+	height: 700px;
+}
+
+#slower {
+	z-index: 1;
+}
+
+#faster {
+	position: absolute;
+	z-index: 2;
+	top: 700px;
+	width: 100%;
+}
+
+/**************** 
+   SLOWER DIVs 
+*****************/
+
+#slower > div {
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+#slower .breyn {
+	background-image: url(../assets/breyn.jpg);
+    margin-bottom: 384px;
+}
+
+/* PRESTATIONS */
+
+#slower .prestations {
+	background-image: url(../assets/girl.jpg);
+	margin-bottom: 287px;
+	background-position: initial; 
+}
+#slower .prestations section {
+	position: relative;
+	height: 300px;
+	width: 400px;
+}
+
+/* (bulles) */
+#slower .prestations section span {
+    border: 0 solid black;
+    position: absolute;
+    box-shadow: 4px 4px 13px, 0px 0px 13px;
+    opacity: 0;
+}
+#slower .prestations section span:first-child {
+    width: 95%;
+    height: 100px;
+    border-radius: 222px / 64px;
+    top: 63px;
+    left: 4%;
+}
+#slower .prestations section span:first-child p {
+	text-align: center;
+    font-size: 3.5em;
+    font-family: 'Tangerine', arial;
+    line-height: 0;
+    margin-top: 48px;
+}
+#slower .prestations section span:nth-child(2) {
+    width: 40px;
+    height: 40px;
+    border-radius: 150px;
+    bottom: 57px;
+    left: 23%;
+}
+#slower .prestations section span:last-child {
+    width: 15px;
+    height: 15px;
+    border-radius: 150px;
+    bottom: 13px;
+    left: 14%;
+}
+
+/* fin prestations */
+
+#slower .sourire {
+	background-image: url(../assets/bike.jpg);
+	margin-bottom: 287px;
+}
+
+#slower .contact {
+	background-image: url(../assets/smartphone.jpg);
+}
+
+/**************** 
+   FASTER DIVs 
+*****************/
+#faster .developpeur-couleur {
+	background-color: #FFFFFF;
+    box-shadow: 0 0 15px;
+	height: 700px;
+}
+#faster .faq-couleur {
+	background-color: #FFFFFF;
+    box-shadow: 0 0 15px;
+	height: auto;
+}
+#faster .portfolio-couleur {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px;
+    height: 700px;
+}
+
+#faster .prestations-transparent {
+	height: 646px;
+}
+
+#faster .sourire-transparent {
+	height: 616px;
+}
+
+/**********
+   AUTRE
+***********/
+.modal-title {
+	text-transform: uppercase;
+}
